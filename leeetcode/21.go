@@ -1,10 +1,5 @@
 package leetcode
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 // 递归解法
 func mergeTwoListsV1(list1 *ListNode, list2 *ListNode) *ListNode {
 	if list1 == nil {
