@@ -2,7 +2,7 @@ package leetcode
 
 import "testing"
 
-func TestHasCycleV1(t *testing.T) {
+func TestDetectCycleV1(t *testing.T) {
 	n7 := ListNode{7, nil}
 	n6 := ListNode{6, &n7}
 	n5 := ListNode{5, &n6}
@@ -13,10 +13,10 @@ func TestHasCycleV1(t *testing.T) {
 	// 模拟环
 	n7.Next = &n4
 	//printNodeLise(&n1)
-	t.Log(hasCycleV1(&n1))
+	t.Log(detectCycleV1(&n1))
 }
 
-func TestHasCycleV2(t *testing.T) {
+func TestDetectCycleV2(t *testing.T) {
 	n7 := ListNode{7, nil}
 	n6 := ListNode{6, &n7}
 	n5 := ListNode{5, &n6}
@@ -27,5 +27,5 @@ func TestHasCycleV2(t *testing.T) {
 	// 模拟环
 	n7.Next = &n4
 	//printNodeLise(&n1)
-	t.Log(hasCycleV2(&n1))
+	t.Log(detectCycleV2(&n1))
 }

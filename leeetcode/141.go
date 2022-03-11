@@ -24,7 +24,7 @@ func hasCycleV2(head *ListNode) bool {
 // 用 hash 表存链表的内存地址值
 func hasCycleV1(head *ListNode) bool {
 	m := map[*ListNode]byte{}
-	if head != nil {
+	for head != nil {
 		if _, ok := m[head]; ok {
 			return true
 		}
