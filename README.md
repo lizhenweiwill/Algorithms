@@ -13,4 +13,5 @@ https://github.com/lizhenweicn/Algorithms
 # Hard
 
 - 25
+- 28
 - 224

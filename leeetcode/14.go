@@ -1,15 +1,15 @@
 package leetcode
 
-func longestCommonPrefix(strs []string) string {
-	if strs == nil || len(strs) == 0 {
+func longestCommonPrefix(strings []string) string {
+	if strings == nil || len(strings) == 0 {
 		return ""
 	}
-	for i, v := range strs[0] {
-		for j := 1; j < len(strs); j++ {
-			if i == len(strs[j]) || strs[j][i] != byte(v) {
-				return strs[0][:i]
+	for i, v := range strings[0] {
+		for _, str := range strings {
+			if i == len(str) || str[i] != byte(v) {
+				return strings[0][:i]
 			}
 		}
 	}
-	return strs[0]
+	return strings[0]
 }
